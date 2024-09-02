@@ -1,0 +1,13 @@
+defaults:
+  - env: jaxnav
+  - learning: ippo-jaxnav
+  - ued: plr
+  - _self_
+
+"SEED": 2
+"GROUP_NAME": "jaxnav-plr"
+"ENTITY": ""
+"PROJECT": "multi_robot_ued"
+"WANDB_MODE" : "disabled"
+"SAVE_PATH": "checkpoints/multi_robot_ued"
+"EVAL_SAMPLED_SET_PATH": "sfl/data/test_sets/sampled_tc_100e_4a.pkl"

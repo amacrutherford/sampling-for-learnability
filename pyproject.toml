@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ['sfl*']
+
+[tool.setuptools.dynamic]
+version = {attr = "sfl.__version__"}
+dependencies = {file = ["requirements.txt"]}
+
+[project]
+name = "sfl"
+readme = "README.md"
+description = "Sampling for Learnability"
+authors = [
+    {name = "Alexander Rutherford", email = "arutherford@robots.ox.ac.uk"},
+  ]
+dynamic = ["version", "dependencies"]
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "License :: OSI Approved :: Apache Software License",
+]

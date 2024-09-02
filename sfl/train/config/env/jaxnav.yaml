@@ -1,0 +1,38 @@
+env_name: "jaxnav"
+test_set: "multi"
+num_agents: 4
+env_params: 
+  act_type: "Continuous"  # Continuous, Discrete
+  rad: 0.3  # agent radius (m)
+  goal_radius: 0.3  # goal radius (m)
+  evaporating: False  # whether an agent evaporates after reaching their goal or colliding
+  max_v: 1.0  # max velocity (m/s)  NOTE should not be used
+  max_v_acc: 1.0
+  max_w: 0.6
+  max_w_acc: 1.0
+  max_steps: 500  # max environment steps within an episode
+  dt: 0.1  # seconds per step (s)
+  fixed_lambda: True
+  lambda_range: [0.0, 1.0]
+  rew_lambda: 0.5
+  goal_rew: 4.0
+  dt_rew: -0.01
+  coll_rew: -4.0
+  weight_g: 0.25
+  weight_w: -0.0
+  lidar_thresh: 0.1  # should this be a potential field
+  lidar_rew: -0.1
+  lidar_num_beams: 200  # number of LiDAR beams
+  lidar_range_resolution: 0.05  # distance between LiDAR points
+  lidar_max_range: 6  # max range
+  lidar_min_range: 0  # min range TODO not implemented fulled
+  lidar_angle_factor: 1.0  # * jnp.pi (angle beam symettreical)
+  info_by_agent: True
+  share_only_sparse: False
+  map_id: "Grid-Rand-Poly"  # Grid-Rand, Grid-PreSpec, Polygon, Grid-Test2
+  map_params:
+    map_size: [11, 11]
+    fill: 0.6
+    start_pad: 1.5
+    valid_path_check: False
+    sample_test_case_type: "grid"

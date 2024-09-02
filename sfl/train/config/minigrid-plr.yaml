@@ -1,0 +1,13 @@
+defaults:
+  - env: minigrid
+  - learning: ippo-minigrid
+  - ued: plr
+  - _self_
+
+"SEED": 2
+"GROUP_NAME": "minigrid-plr"
+"ENTITY": ""
+"PROJECT": "minigrid"
+"WANDB_MODE" : "disabled"
+"SAVE_PATH": "checkpoints/new_minigrid"
+"CHECKPOINT_SAVE_INTERVAL": 0

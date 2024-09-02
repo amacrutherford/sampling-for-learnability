@@ -1,0 +1,35 @@
+command:
+  - python3
+  - ${program}
+  - ${args_no_hyphens}
+entity: alex-plus
+method: grid
+parameters:
+  env.num_agents:
+    values:
+      - 4
+  env.test_set:
+    values:
+      - "multi"
+  use.USE_ACCEL:
+    values:
+      - True
+  ued.SCORE_FUNCTION:
+    values:
+      - "MaxMC"
+  SEED:
+    values:
+      - 0
+      - 1
+      - 2
+      - 3
+      - 4
+  GROUP_NAME:
+    values:
+      - "jaxnav-accel_maxmc-5seeds"
+  WANDB_MODE:
+    values:
+      - "online"
+
+program: sfl/train/jaxnav_plr.py
+project: multi_robot_ued

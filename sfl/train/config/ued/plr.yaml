@@ -1,0 +1,17 @@
+"EXPLORATORY_GRAD_UPDATES": True
+"USE_ACCEL": False
+"NUM_EDITS": 20
+"SCORE_FUNCTION": "MaxMC"
+PLR_PARAMS:  # starting with the same as MiniGrid
+  #max_num_ep: 100  # max number of episodes over which regret score is averaged
+  # prioritisation: "proportional"  # "rank", "proportional"
+  replay_prob: 0.5  # setting to 0 should basically emulate DR
+  capacity: 4000
+  # temp: 0.3
+  staleness_coeff: 0.3
+  minimum_fill_ratio: 1.0
+  prioritization: "topk"
+  prioritization_params:
+    temperature: 1.0
+    k: 1  
+  duplicate_check: False

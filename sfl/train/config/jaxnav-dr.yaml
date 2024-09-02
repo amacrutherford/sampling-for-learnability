@@ -1,0 +1,11 @@
+defaults:
+  - env: robsim
+  - learning: ippo-robsim
+  - _self_
+
+"SEED": 2
+"GROUP_NAME": "jaxnav-dr"
+"ENTITY": ""
+"PROJECT": "multi_robot_ued"
+"WANDB_MODE" : "disabled"
+"SAVE_PATH": "checkpoints/multi_robot_ued"

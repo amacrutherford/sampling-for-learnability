@@ -1,0 +1,27 @@
+defaults:
+  - env: jaxnav
+  - learning: ippo-jaxnav
+  - _self_
+
+"SEED": 2
+"GROUP_NAME": "jaxnav-sfl"
+"ENTITY": ""
+"PROJECT": "multi_robot_ued"
+"WANDB_MODE" : "disabled"
+"SAVE_PATH": "checkpoints/multi_robot_ued"
+
+env:
+  num_agents: 1
+  test_set: "single"
+
+learning:
+  # "NUM_ENVS": 256
+  "NUM_ENVS_FROM_SAMPLED": 128
+  "NUM_ENVS_TO_GENERATE": 128
+
+# SAMPLE LEARNABILITY 
+"BATCH_SIZE": 1000
+"NUM_BATCHES": 5
+"ROLLOUT_STEPS": 1000
+"NUM_TO_SAVE": 100
+"EVAL_SAMPLED_SET_PATH": "sfl/data/test_sets/sampled_tc_100e_1a.pkl"

@@ -1,0 +1,3 @@
+pandas
+jaxmarl @ git+https://github.com/FLAIROx/JaxMARL  # use latest version
+jaxued @ git+https://github.com/DramaCow/jaxued

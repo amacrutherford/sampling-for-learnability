@@ -1,0 +1,13 @@
+env_name: "Minigrid-v0"
+N_WALLS: 60
+AGENT_VIEW_SIZE: 5
+"EVAL_NUM_ATTEMPTS": 5
+"EVAL_LEVELS":
+  - "SixteenRooms"
+  - "SixteenRooms2"
+  - "Labyrinth"
+  - "LabyrinthFlipped"
+  - "Labyrinth2"
+  - "StandardMaze"
+  - "StandardMaze2"
+  - "StandardMaze3"

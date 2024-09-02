@@ -1,0 +1,22 @@
+defaults:
+  - env: minigrid
+  - learning: ippo-minigrid
+  - _self_
+
+"SEED": 2
+"GROUP_NAME": "minigrid-sfl"
+"ENTITY": ""
+"PROJECT": "minigrid"
+"WANDB_MODE" : "disabled"
+"SAVE_PATH": "checkpoints/new_minigrid"
+
+learning:
+  "NUM_ENVS_FROM_SAMPLED": 128
+  "NUM_ENVS_TO_GENERATE": 128
+
+# SAMPLE LEARNABILITY 
+"BATCH_SIZE": 1000
+"NUM_BATCHES": 5
+"ROLLOUT_STEPS": 2000
+"NUM_TO_SAVE": 1000
+"EVAL_SAMPLED_SET_PATH": "jax_multirobsim/deploy/data/sampled_test_set_100e_4a.pkl"
