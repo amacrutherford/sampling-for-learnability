@@ -16,7 +16,7 @@ Approximations for Curriculum Discovery". This code is held seperate from the ma
 
 ## Installation
 
-We include a Dockerfile which can be built with `make build` and run with `make run`.
+We include a Dockerfile which can be built with `make build` and run with `make run`. The Dockerfile installs xland at commit [9ddd611](https://github.com/corl-team/xland-minigrid/commit/9ddd6116a8a5ece792ccd41a29d43b5b12df16b5)
 
 ## Running experiments
 
