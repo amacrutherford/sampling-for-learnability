@@ -19,6 +19,8 @@
         <img src="https://img.shields.io/badge/arXiv-2408.15099-b31b1b.svg" /></a>
 </p>
 
+🎉 **Update: We were accepted at NeurIPS 2024, see you all in Vancouver!**
+
 A repoistory for training **unsupervised environment design** (UED) methods on **2D navigation** tasks. We support three environments:
 - **JaxNav**, our Jax-based simulator for single- and multi-robot 2D geometric navigation, this environment is imported from [JaxMARL](https://github.com/FLAIROx/JaxMARL).
 - **MiniGrid**: a sigle-agent maze navigation domain, this environment is imported from [JaxUED](https://github.com/DramaCow/jaxued).
